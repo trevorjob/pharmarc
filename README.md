@@ -40,4 +40,4 @@ Follow these steps to get Pharmarc running locally.
 The API will be available at http://127.0.0.1:5000.
 
 - **API Documentation**
-  - For API documentation, visit http://127.0.0.1:5000/docs.
+  - For API documentation, visit [api docs](https://documenter.getpostman.com/view/29635312/2sA3kVk24E)
