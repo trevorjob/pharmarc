@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """all routes for the branches"""
-from api.views import app_views
 from flask import abort, jsonify, request
 from flask_jwt_extended import jwt_required
+
+from api.views import app_views
 from helpers.object import *
 from models import STORAGE, role_required
 from models.branch import Branch
@@ -35,9 +36,9 @@ def get_branch(id):
     return jsonify({"data": branchFull})
 
 
+# @jwt_required()
+# @role_required()
 @app_views.route("/branches", methods=["POST"], strict_slashes=True)
-@jwt_required()
-@role_required()
 def post_branch():
     """add new branch"""
 
